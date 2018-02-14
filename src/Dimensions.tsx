@@ -42,8 +42,9 @@ export default class Dimensions extends React.Component<{}, State> {
       <>
         {this.state.dimensions && (
           <Container>
-            {this.state.dimensions.width} &times; {this.state.dimensions.height}{" "}
-            px
+            {this.state.dimensions.width.toFixed(0)}
+            &times;
+            {this.state.dimensions.height.toFixed(0)}px
           </Container>
         )}
         <div ref={_ => (this.node = _)}>

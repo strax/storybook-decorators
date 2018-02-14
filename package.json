@@ -5,11 +5,16 @@
   "main": "dist/index.js",
   "author": "Sami Kukkonen <sami@samikukkonen.fi>",
   "license": "MIT",
+  "scripts": {
+    "start": "start-storybook -p 9001"
+  },
   "devDependencies": {
+    "@storybook/react": "^3.3.13",
     "@types/node": "^9.4.6",
     "@types/react": "^16.0.38",
     "@types/react-dom": "^16.0.4",
     "@types/storybook__react": "^3.0.7",
+    "babel-core": "^6.26.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "typescript": "^2.7.1"

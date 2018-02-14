@@ -1,7 +1,7 @@
-import * as React from "react";
+import React from "react";
 import { StoryDecorator } from "@storybook/react";
 import Background from "./Background";
-import Centered from "Centered";
+import Centered from "./Centered";
 import Wrapper from "./Wrapper";
 import Dimensions from "./Dimensions";
 
