@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "module": "es2015",
-    "target": "es5",
+    "target": "es2015",
     "baseUrl": "src",
     "outDir": "dist",
     "jsx": "react",
@@ -9,5 +9,7 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true
   },
-  "include": ["src/**/*"]
+  "include": [
+    "src/**/*"
+  ]
 }
