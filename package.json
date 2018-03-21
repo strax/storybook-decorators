@@ -6,7 +6,8 @@
   "author": "Sami Kukkonen <sami@samikukkonen.fi>",
   "license": "MIT",
   "scripts": {
-    "start": "start-storybook -p 9001"
+    "build": "tsc",
+    "start": "start-storybook -p 9001 -c test/.storybook"
   },
   "devDependencies": {
     "@storybook/react": "^3.3.13",
