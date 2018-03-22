@@ -9,7 +9,7 @@
   "scripts": {
     "prepublishOnly": "npm run build",
     "build": "rollup -c",
-    "start": "start-storybook -p 9001 -c test/.storybook"
+    "start": "start-storybook -p 9001 -c example/.storybook"
   },
   "devDependencies": {
     "@storybook/react": "^3.3.13",
