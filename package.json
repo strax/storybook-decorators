@@ -7,6 +7,7 @@
   "author": "Sami Kukkonen <sami@samikukkonen.fi>",
   "license": "MIT",
   "scripts": {
+    "prepublishOnly": "npm run build",
     "build": "rollup -c",
     "start": "start-storybook -p 9001 -c test/.storybook"
   },
