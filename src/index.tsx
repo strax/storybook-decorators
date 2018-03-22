@@ -2,8 +2,6 @@ import React from "react";
 import { StoryDecorator } from "@storybook/react";
 import Background from "./Background";
 import Centered from "./Centered";
-import Wrapper from "./Wrapper";
-import Dimensions from "./Dimensions";
 import { injectGlobal } from "styled-components";
 
 export interface CanvasOptions {
@@ -22,9 +20,7 @@ export default function canvas(options: CanvasOptions = {}): StoryDecorator {
     return (
       <Background>
         <Centered>
-          <Wrapper>
-            <Dimensions>{render()}</Dimensions>
-          </Wrapper>
+          {render()}
         </Centered>
       </Background>
     );
