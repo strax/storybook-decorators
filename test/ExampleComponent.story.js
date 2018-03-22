@@ -2,8 +2,8 @@
 
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import canvas from "../dist";
 import styled from "styled-components";
+import { background, centered } from "..";
 
 const ExampleComponent = styled.div`
   background: #fff;
@@ -11,7 +11,8 @@ const ExampleComponent = styled.div`
 `;
 
 storiesOf("ExampleComponent", module)
-  .addDecorator(canvas())
+  .addDecorator(centered)
+  .addDecorator(background)
   .add("Default", () => {
     return <ExampleComponent>Hello world, it's me!</ExampleComponent>;
   });

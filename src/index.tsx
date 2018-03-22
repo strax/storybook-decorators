@@ -1,12 +1,6 @@
 import React from "react";
 import { StoryDecorator } from "@storybook/react";
-import Background from "./Background";
-import Centered from "./Centered";
 import { injectGlobal } from "styled-components";
-
-export interface CanvasOptions {
-  width?: number;
-}
 
 injectGlobal`
   body {
@@ -15,14 +9,6 @@ injectGlobal`
   }
 `;
 
-export default function canvas(options: CanvasOptions = {}): StoryDecorator {
-  return (render, ctx) => {
-    return (
-      <Background>
-        <Centered>
-          {render()}
-        </Centered>
-      </Background>
-    );
-  };
-}
+export { default as background } from "./background";
+export { default as centered } from "./centered";
+export { default as decorator, wrap } from "./decorator";
