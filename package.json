@@ -1,7 +1,7 @@
 {
-  "name": "storybook-addon-canvas",
+  "name": "storybook-decorators",
   "version": "0.0.1",
-  "description": "Provides a barebones canvas for isolated component development",
+  "description": "Provides small, composable decorators for enhancing Storybook development",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "author": "Sami Kukkonen <sami@samikukkonen.fi>",
