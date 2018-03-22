@@ -3,16 +3,17 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import styled from "styled-components";
-import { background, centered } from "..";
+import { background, centered, compose } from "..";
 
 const ExampleComponent = styled.div`
   background: #fff;
   padding: 20px;
 `;
 
+const decorate = compose(background, centered);
+
 storiesOf("ExampleComponent", module)
-  .addDecorator(centered)
-  .addDecorator(background)
+  .addDecorator(decorate)
   .add("Default", () => {
     return <ExampleComponent>Hello world, it's me!</ExampleComponent>;
   });

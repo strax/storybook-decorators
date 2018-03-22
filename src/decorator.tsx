@@ -1,5 +1,6 @@
-import React, { Fragment } from "react";
-import { StoryDecorator, RenderFunction } from "@storybook/react";
+import React from "react";
+import { Fragment } from "react";
+import { StoryDecorator, Renderable } from "@storybook/react";
 
 export default function decorator(f: StoryDecorator): StoryDecorator {
   return (render, ctx) => {
@@ -13,3 +14,6 @@ export default function decorator(f: StoryDecorator): StoryDecorator {
 
 export const wrap = (Component: React.ComponentType<{}>): StoryDecorator =>
   render => <Component>{render()}</Component>;
+
+export const compose = (...fs: StoryDecorator[]): StoryDecorator =>
+  (story, ctx) => fs.reduceRight((acc, f) => f(() => acc, ctx), story() as Renderable);

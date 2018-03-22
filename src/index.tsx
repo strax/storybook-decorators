@@ -1,5 +1,3 @@
-import React from "react";
-import { StoryDecorator } from "@storybook/react";
 import { injectGlobal } from "styled-components";
 
 injectGlobal`
@@ -11,4 +9,4 @@ injectGlobal`
 
 export { default as background } from "./background";
 export { default as centered } from "./centered";
-export { default as decorator, wrap } from "./decorator";
+export { default as decorator, wrap, compose } from "./decorator";
