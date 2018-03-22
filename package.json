@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Provides a barebones canvas for isolated component development",
   "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "author": "Sami Kukkonen <sami@samikukkonen.fi>",
   "license": "MIT",
   "scripts": {
