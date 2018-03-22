@@ -1,5 +1,7 @@
 # storybook-decorators
 
+![Latest version in npm](https://img.shields.io/npm/v/storybook-decorators.svg)
+
 **The project is in initial development**. More decorators and documentation will be added.
 
 Storybook-decorators provides common [Storybook](https://storybook.js.org) decorators for enhancing the prototyping experience. Decorators are independent of each other meaning it is possible to use only a subset of the decorators provided. The library also provides a `compose` function for composing decorators in natural order.
