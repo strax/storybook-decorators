@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`compose composes the given decorators from right to left 1`] = `
+<Wrapper1>
+  <div
+    id="wrapper1"
+  >
+    <Wrapper2>
+      <div
+        id="wrapper2"
+      >
+        <Wrapper3>
+          <div
+            id="wrapper3"
+          >
+            <div>
+              wrapped
+            </div>
+          </div>
+        </Wrapper3>
+      </div>
+    </Wrapper2>
+  </div>
+</Wrapper1>
+`;
+
+exports[`wrap returns a decorator that wraps the render function in the given component 1`] = `
+<Wrapper1>
+  <div
+    id="wrapper1"
+  >
+    <div>
+      wrapped
+    </div>
+  </div>
+</Wrapper1>
+`;
