@@ -1,7 +1,8 @@
 {
   "name": "storybook-decorators",
   "version": "0.2.3",
-  "description": "Provides small, composable decorators for enhancing Storybook development",
+  "description":
+    "Provides small, composable decorators for enhancing Storybook development",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "author": "Sami Kukkonen <sami@samikukkonen.fi>",
@@ -12,7 +13,7 @@
     "start": "start-storybook -p 9001 -c example/.storybook"
   },
   "devDependencies": {
-    "@storybook/react": "^3.4.0-rc.3",
+    "@storybook/react": "^4.0.0-alpha.8",
     "@types/enzyme": "^3.1.9",
     "@types/jest": "^22.2.0",
     "@types/react": "^16.0.38",
@@ -53,19 +54,9 @@
     "moduleNameMapper": {
       "\\.svg$": "identity-obj-proxy"
     },
-    "setupFiles": [
-      "<rootDir>/testSetup.js"
-    ],
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ],
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx",
-      "node"
-    ],
+    "setupFiles": ["<rootDir>/testSetup.js"],
+    "snapshotSerializers": ["enzyme-to-json/serializer"],
+    "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "node"],
     "globals": {
       "ts-jest": {
         "useBabelrc": true
