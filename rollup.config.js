@@ -5,18 +5,18 @@ import commonjs from "rollup-plugin-commonjs";
 
 import * as pkg from "./package.json";
 
-const dependencies = Object.keys({ ...pkg.dependencies, ...pkg.peerDependencies });
+const dependencies = Object.keys({
+  ...pkg.dependencies,
+  ...pkg.peerDependencies
+});
 
 export default {
   input: "src/index.tsx",
   output: {
-    format: "es",
+    format: "cjs",
     file: "dist/index.js",
     sourcemap: true
   },
   external: dependencies,
-  plugins: [
-    typescript(),
-    url(),
-  ]
-}
+  plugins: [typescript(), url()]
+};
