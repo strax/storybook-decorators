@@ -7,6 +7,6 @@ injectGlobal`
   }
 `;
 
-export { default as background } from "./background";
-export { default as centered } from "./centered";
+export { default as background } from "./Background";
+export { default as centered } from "./Centered";
 export { default as decorator, wrap, compose } from "./decorator";
