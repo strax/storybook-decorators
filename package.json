@@ -9,7 +9,8 @@
   "scripts": {
     "prepublishOnly": "npm run build",
     "build": "rollup -c",
-    "start": "start-storybook -p 9001 -c example/.storybook"
+    "start": "start-storybook -p 9001 -c example/.storybook",
+    "test": "jest"
   },
   "devDependencies": {
     "@storybook/react": "^4.0.0-alpha.8",
@@ -49,6 +50,10 @@
       "^.+\\.tsx?$": "ts-jest"
     },
     "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "<rootDir>/dist"
+    ],
     "moduleNameMapper": {
       "\\.svg$": "identity-obj-proxy"
     },
