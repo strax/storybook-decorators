@@ -26,8 +26,8 @@
     "identity-obj-proxy": "3.0.0",
     "jest": "22.4.3",
     "jest-image-snapshot": "2.4.0",
-    "react": "16.2.0",
-    "react-dom": "16.2.0",
+    "react": "16.4.2",
+    "react-dom": "16.4.2",
     "rollup": "0.64.1",
     "rollup-plugin-commonjs": "9.1.5",
     "rollup-plugin-node-resolve": "3.3.0",
@@ -40,7 +40,7 @@
   "peerDependencies": {
     "@storybook/addons": ">= 3.3.13",
     "@storybook/react": ">= 3.3.13",
-    "react": "^16.0.0",
+    "react": "^16.3.0",
     "styled-components": "^3.0.0"
   },
   "resolutions": {
