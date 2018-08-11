@@ -1,5 +1,4 @@
 import React from "react";
-import background from "../background";
 import { mount } from "enzyme";
 import { centered } from "..";
 
