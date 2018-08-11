@@ -9,6 +9,9 @@ const Tile = () => <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><
 const tile = "data:image/svg+xml," + escape(ReactDOMServer.renderToStaticMarkup(<Tile />));
 
 const Background = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
   background-image: url(${tile});
