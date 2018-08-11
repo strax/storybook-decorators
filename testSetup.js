@@ -1,3 +1,4 @@
+require("jest-styled-components");
 const Enzyme = require("enzyme");
 const React16Adapter = require("enzyme-adapter-react-16");
 

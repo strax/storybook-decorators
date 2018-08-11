@@ -26,6 +26,7 @@
     "identity-obj-proxy": "3.0.0",
     "jest": "22.4.3",
     "jest-image-snapshot": "2.4.0",
+    "jest-styled-components": "^6.0.0",
     "react": "16.4.2",
     "react-dom": "16.4.2",
     "rollup": "0.64.1",
@@ -33,9 +34,9 @@
     "rollup-plugin-node-resolve": "3.3.0",
     "rollup-plugin-typescript2": "0.16.1",
     "rollup-plugin-url": "1.4.0",
+    "styled-components": "3.4.2",
     "ts-jest": "23.1.3",
-    "typescript": "3.0.1",
-    "styled-components": "3.4.2"
+    "typescript": "3.0.1"
   },
   "peerDependencies": {
     "@storybook/addons": ">= 3.3.13",
@@ -51,13 +52,14 @@
       "^.+\\.tsx?$": "ts-jest"
     },
     "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
-    "testPathIgnorePatterns": ["<rootDir>/dist/", "<rootDir>/node_modules/"],
+    "testPathIgnorePatterns": [
+      "<rootDir>/dist/",
+      "<rootDir>/node_modules/"
+    ],
     "moduleNameMapper": {
       "\\.svg$": "identity-obj-proxy"
     },
-    "setupFiles": [
-      "<rootDir>/testSetup.js"
-    ],
+    "setupTestFrameworkScriptFile": "<rootDir>/testSetup.js",
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
     ],
