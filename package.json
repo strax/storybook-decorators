@@ -45,6 +45,9 @@
     "@storybook/react": ">= 3.3.13",
     "react": "^16.0.0"
   },
+  "resolutions": {
+    "fsevents": "1.2.4"
+  },
   "jest": {
     "transform": {
       "^.+\\.tsx?$": "ts-jest"
