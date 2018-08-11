@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import { StoryDecorator } from "@storybook/react";
-import decorator, { wrap } from "./decorator";
+import { decorator, wrap } from "./decorator";
 
-export const Centered = styled.div`
+const Centered = styled.div`
   display: flex;
   width: -webkit-fill-available;
   width: -moz-available;
@@ -12,6 +12,4 @@ export const Centered = styled.div`
   justify-content: center;
 `;
 
-const centered: StoryDecorator = decorator(wrap(Centered));
-
-export default centered;
+export const centered: StoryDecorator = decorator(wrap(Centered));

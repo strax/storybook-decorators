@@ -2,7 +2,7 @@ import React from "react";
 import { Fragment } from "react";
 import { StoryDecorator, Renderable } from "@storybook/react";
 
-export default function decorator(f: StoryDecorator): StoryDecorator {
+export function decorator(f: StoryDecorator): StoryDecorator {
   return (render, ctx) => {
     return <Fragment>{f(render, ctx)}</Fragment>
   }

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import decorator, { wrap } from "./decorator";
+import { decorator, wrap } from "./decorator";
 import { StoryDecorator } from "@storybook/react";
 import ReactDOMServer from "react-dom/server";
 
@@ -8,7 +8,7 @@ const Tile = () => <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><
 
 const tile = "data:image/svg+xml," + escape(ReactDOMServer.renderToStaticMarkup(<Tile />));
 
-export const Background = styled.div`
+const Background = styled.div`
   width: 100vw;
   height: 100vh;
   background-image: url(${tile});
@@ -16,6 +16,4 @@ export const Background = styled.div`
   background-repeat: repeat;
 `;
 
-const background: StoryDecorator = decorator(wrap(Background));
-
-export default background;
+export const background: StoryDecorator = decorator(wrap(Background));
