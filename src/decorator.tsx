@@ -4,11 +4,7 @@ import { StoryDecorator, Renderable } from "@storybook/react";
 
 export default function decorator(f: StoryDecorator): StoryDecorator {
   return (render, ctx) => {
-    if (process.env.NODE_ENV === "test") {
-      return <Fragment>{render()}</Fragment>;
-    } else {
-      return <Fragment>{f(render, ctx)}</Fragment>
-    }
+    return <Fragment>{f(render, ctx)}</Fragment>
   }
 }
 

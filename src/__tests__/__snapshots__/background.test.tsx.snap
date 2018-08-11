@@ -1,7 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`background snapshot 1`] = `
-<div>
-  Test case
-</div>
+.c0 {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2060%2060%22%3E%3Cpath%20fill%3D%22%23FFF%22%20d%3D%22M0%200h60v60H0z%22%3E%3C/path%3E%3Cpath%20d%3D%22M0%200h30v30H0V0zm30%2030h30v30H30V30z%22%20fill%3D%22%23F8F8F8%22%3E%3C/path%3E%3C/svg%3E);
+  background-size: 30px 30px;
+  background-repeat: repeat;
+}
+
+<styled.div>
+  <div
+    className="c0"
+  >
+    <div>
+      Test case
+    </div>
+  </div>
+</styled.div>
 `;
