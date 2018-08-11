@@ -1,5 +1,5 @@
 import React from "react";
-import styled, { StyledComponentClass } from "styled-components";
+import styled from "styled-components";
 import decorator, { wrap } from "./decorator";
 import { StoryDecorator } from "@storybook/react";
 import ReactDOMServer from "react-dom/server";
