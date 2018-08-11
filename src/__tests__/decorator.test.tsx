@@ -1,6 +1,6 @@
 import React from "react";
 import { mount } from "enzyme";
-import { wrap, compose } from "..";
+import { wrap, compose } from "../decorator";
 
 const Wrapper1: React.SFC = props => <div id="wrapper1">{props.children}</div>;
 const Wrapper2: React.SFC = props => <div id="wrapper2">{props.children}</div>;

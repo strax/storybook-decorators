@@ -1,6 +1,6 @@
 import React from "react";
 import { mount } from "enzyme";
-import { centered } from "..";
+import { centered } from "../centered";
 
 const ctx = { kind: "test", story: "test" };
 

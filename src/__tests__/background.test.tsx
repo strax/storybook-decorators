@@ -1,5 +1,5 @@
 import React from "react";
-import background from "../background";
+import { background } from "../background";
 import { mount } from "enzyme";
 
 const ctx = { kind: "test", story: "test" };
