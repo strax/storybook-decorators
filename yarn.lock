@@ -4413,7 +4413,7 @@ jest-snapshot@^22.4.3:
     natural-compare "^1.4.0"
     pretty-format "^22.4.3"
 
-jest-styled-components@^6.0.0:
+jest-styled-components@6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/jest-styled-components/-/jest-styled-components-6.0.0.tgz#1fe37051713864bf890afb173039125b4bd9ee08"
   dependencies:
