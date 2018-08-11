@@ -9,11 +9,15 @@ const dependencies = Object.keys({ ...pkg.dependencies, ...pkg.peerDependencies 
 
 export default {
   input: "src/index.tsx",
-  output: {
+  output: [{
     format: "es",
+    file: "dist/index.es.js",
+    sourcemap: true
+  }, {
+    format: "cjs",
     file: "dist/index.js",
     sourcemap: true
-  },
+  }],
   external: dependencies,
   plugins: [
     typescript(),
