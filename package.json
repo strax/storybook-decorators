@@ -1,6 +1,6 @@
 {
   "name": "storybook-decorators",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Provides small, composable decorators for enhancing Storybook development",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
